@@ -58,11 +58,11 @@ if (isset($_POST['aceptar'])) {
 
 
     if (isset($_SESSION["error"])) {
-        $_SESSION["error"];
+        $_SESSION["error"] = "El pokemon no se ha podido agregar.";
         header("Location: ../php_views/pokemon.php");
         exit();
     } else {
-        $_SESSION["correcto"];
+        $_SESSION["correcto"] = "El pokemon se ha agregado correctamente.";
         header("Location: ../php_views/pokemon_list.php");
         
         exit();
@@ -138,11 +138,11 @@ if (isset($_POST['modify'])) {
     );
 
     if (isset($_SESSION["error"])) {
-        $_SESSION["error"];
+        $_SESSION["error"] = "El pokemon no se ha podido modificar.";
         header("Location: ../php_views/pokemon_edit.php");
         exit();
     } else {
-        $_SESSION["correcto"];
+        $_SESSION["correcto"] = "El pokemon se ha modificado correctamente.";
         header("Location: ../php_views/pokemon_list.php");
         exit();
     }
@@ -158,11 +158,11 @@ if (isset($_POST['borrar'])) {
         );
 
         if (isset($_SESSION["error"])) {
-            $_SESSION["error"];
+            $_SESSION["error"] = "El pokemon no se ha podido borrar.";
             header("Location: ../php_views/pokemon_list.php");
             exit();
         } else {
-            $_SESSION["correcto"];
+            $_SESSION["correcto"] = "El pokemon se ha borrado correctamente.";
             header("Location: ../php_views/pokemon_list.php");
             
             exit();

@@ -267,34 +267,31 @@ function getErrorMessage($e)
         {
             switch($e->errorInfo[1]) 
                 {
+                    case 1044: 
+                        $message = "Usuario o contraseña incorrectos."; 
+                        break;
+                    case 1045: 
+                        $message = "Acceso no concedido."; 
+                        break;
+                    case 1046: 
+                        $message = "No hay ninguna base de datos seleccionada."; 
+                        break;                    
+                    case 1049: 
+                        $message = "Se desconoce la base de datos, revisela."; 
+                        break;
+                    case 1451: 
+                        $message = "Registro con datos de foreign key."; 
+                        break;
                     case 1062: 
                         $message = "El registro ya esta en la base de datos."; 
                         break;
-                    case 1451: 
-                        $message = "Registry with related data."; 
+                    case 2002: 
+                        $message = "Servidor no econtrado.";
                         break;
                     default: 
                         $message = $e->errorInfo[1] . ": " . $e->errorInfo[2];
                         break;
                 }
         } 
-        else 
-        {
-        switch($e->getCode()) {
-            case 1044: 
-                $message = "Database error: User or password incorrect."; 
-                break;
-            case 1049: 
-                $message = "Database error: Unknown database."; 
-                break;
-            case 2002: 
-                $message = "Database error: Server not found.";
-                break;
-            default: 
-                $message = $e->getCode() . ": " . $e->getMessage();
-                break;
-        }
-    }
-
     return $message;
 }

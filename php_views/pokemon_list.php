@@ -38,6 +38,9 @@ $pokedex = selectAllPokemons();
     <div class="container-fluid mt-3">
         <div class="row row-cols-lg-5 row-cols-md-3 row-cols-sm-2 g-3">
             <?php
+            if ($pokedex == null) {
+                $pokedex = [];
+            }
             foreach ($pokedex as $pokemon) {
                 echo '
             <!--Bulbasur-->
