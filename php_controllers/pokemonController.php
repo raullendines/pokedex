@@ -144,7 +144,6 @@ if (isset($_POST['modify'])) {
     } else {
         $_SESSION["correcto"];
         header("Location: ../php_views/pokemon_list.php");
-        
         exit();
     }
 }
