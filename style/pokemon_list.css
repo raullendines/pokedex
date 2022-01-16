@@ -1,0 +1,10 @@
+
+.alert{
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: 25%;
+    margin-bottom: 0;
+    z-index: 99999999;
+}
+

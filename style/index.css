@@ -1,0 +1,11 @@
+body {
+  background-image: url(../media/bg_pokedex.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.atributos {
+  border-radius: 3px;
+  font-size: 12px;
+}
+/*# sourceMappingURL=index.css.map */
