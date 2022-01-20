@@ -25,6 +25,7 @@ function closeBd()
 function selectAllPokemons()
 {
     try {
+
         $conexion = openBd();
 
         $sentenciaText = "SELECT * FROM `pokemons`";
@@ -34,6 +35,8 @@ function selectAllPokemons()
         $sentencia->execute();
 
         $resultado = $sentencia->fetchAll();
+
+        
     } catch (PDOException $e) {
         $_SESSION['error'] = getErrorMessage($e);
     }

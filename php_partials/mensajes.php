@@ -1,5 +1,5 @@
 <?php if (isset($_SESSION['correcto'])) { ?>
-    <div class="alert alert-danger alert-dismissable fade show d-flex" role="alert" id="alert">
+    <div class="alert alert-success alert-dismissable fade show d-flex" role="alert" id="alert">
         <p>
             <?php
             echo $_SESSION["correcto"];

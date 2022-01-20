@@ -114,8 +114,8 @@ COMMIT;
 -- -----------------------------------------------------
 START TRANSACTION;
 USE `pokedex`;
-INSERT INTO `pokedex`.`pokemons` (`id`, `numero`, `nombre`, `altura`, `peso`, `evolucion`, `imagen`, `regiones_id`) VALUES (DEFAULT, '001', 'Bulbasur', 70, 6.9, 'Sin evolucionar', '/pokedex/media/pokemons/001.png', 1);
-INSERT INTO `pokedex`.`pokemons` (`id`, `numero`, `nombre`, `altura`, `peso`, `evolucion`, `imagen`, `regiones_id`) VALUES (DEFAULT, '002', 'Ivysaur', 100, 13, 'Primera evolución', '/pokedex/media/pokemons/002.png', 1);
+INSERT INTO `pokedex`.`pokemons` (`id`, `numero`, `nombre`, `altura`, `peso`, `evolucion`, `imagen`, `regiones_id`) VALUES (DEFAULT, '001', 'Bulbasur', 70, 6.9, 'Sin evolucionar', '/pokedex/media/pokemons/001.jpg', 1);
+INSERT INTO `pokedex`.`pokemons` (`id`, `numero`, `nombre`, `altura`, `peso`, `evolucion`, `imagen`, `regiones_id`) VALUES (DEFAULT, '002', 'Ivysaur', 100, 13, 'Primera evolución', '/pokedex/media/pokemons/002.jpg', 1);
 INSERT INTO `pokedex`.`pokemons` (`id`, `numero`, `nombre`, `altura`, `peso`, `evolucion`, `imagen`, `regiones_id`) VALUES (DEFAULT, '003', 'Venusaur', 2, 100, 'Segunda evolución', '/pokedex/media/pokemons/003.png', 1);
 INSERT INTO `pokedex`.`pokemons` (`id`, `numero`, `nombre`, `altura`, `peso`, `evolucion`, `imagen`, `regiones_id`) VALUES (DEFAULT, '004', 'Charmander', 60, 8.5, 'Sin evolucionar', '/pokedex/media/pokemons/004.png', 1);
 
